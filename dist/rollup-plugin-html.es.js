@@ -1,4 +1,5 @@
-import _regeneratorRuntime from '@babel/runtime/regenerator';
+import path from 'path';
+import fs from 'fs';
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
   try {
@@ -40,9 +41,6 @@ function _asyncToGenerator(fn) {
  * @author flyerjay
  * @desc generate index.html & auto inject output file
  */
-var path = require('path');
-
-var fs = require('fs');
 
 function readFile(file) {
   return new Promise(function (resolve, reject) {
@@ -56,7 +54,7 @@ function readFile(file) {
   });
 }
 
-module.exports = function () {
+var src = function src() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   var file = options.template;
   var _template = "<!DOCTYPE html>\n    <html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n        <title>rollup-plugin-html</title>\n    </head>\n    <body>\n    </body>\n    </html>";
@@ -65,9 +63,9 @@ module.exports = function () {
     onwrite: function () {
       var _onwrite = _asyncToGenerator(
       /*#__PURE__*/
-      _regeneratorRuntime.mark(function _callee(config) {
+      regeneratorRuntime.mark(function _callee(config) {
         var folder, template, data;
-        return _regeneratorRuntime.wrap(function _callee$(_context) {
+        return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
@@ -124,4 +122,6 @@ module.exports = function () {
     }()
   };
 };
+
+export default src;
 //# sourceMappingURL=rollup-plugin-html.es.js.map

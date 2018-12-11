@@ -1,4 +1,6 @@
 import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 
 const env = process.env.NODE_ENV || 'cjs'
 
@@ -10,6 +12,10 @@ export default {
         format: env
     },
     plugins: [
-        babel()
+        resolve(),
+        commonjs(),
+        babel({
+            exclude: 'node_modules/**'
+        })
     ]
 }
