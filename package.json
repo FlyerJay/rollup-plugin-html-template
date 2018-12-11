@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-html-template",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simple rollup plugin to generate index.html & auto inject outputfile for webapp build",
   "main": "dist/rollup-plugin-html.cjs.js",
   "scripts": {
