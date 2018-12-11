@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-html",
+  "name": "rollup-plugin-html-template",
   "version": "1.0.0",
   "description": "Simple rollup plugin to generate index.html & auto inject outputfile for webapp build",
   "main": "dist/rollup-plugin-html.cjs.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Flyerjay/rollup-plugin-html.git"
+    "url": "git+https://github.com/Flyerjay/rollup-plugin-html-template.git"
   },
   "keywords": [
     "rollup",
@@ -20,9 +20,9 @@
   "author": "flyerjay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Flyerjay/rollup-plugin-html/issues"
+    "url": "https://github.com/Flyerjay/rollup-plugin-html-template/issues"
   },
-  "homepage": "https://github.com/Flyerjay/rollup-plugin-html#readme",
+  "homepage": "https://github.com/Flyerjay/rollup-plugin-html-template#readme",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.2.0",
