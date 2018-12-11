@@ -1,0 +1,35 @@
+{
+  "name": "rollup-plugin-html",
+  "version": "1.0.0",
+  "description": "Simple rollup plugin to generate index.html & auto inject outputfile for webapp build",
+  "main": "dist/rollup-plugin-html.cjs.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "npm run build:cjs",
+    "build:cjs": "NODE_ENV=cjs rollup -c",
+    "build:es": "NODE_ENV=es rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flyerjay/rollup-plugin-html.git"
+  },
+  "keywords": [
+    "rollup",
+    "html"
+  ],
+  "author": "flyerjay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flyerjay/rollup-plugin-html/issues"
+  },
+  "homepage": "https://github.com/Flyerjay/rollup-plugin-html#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "mocha": "^5.2.0",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0"
+  }
+}
