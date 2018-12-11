@@ -1,1 +1,20 @@
-发现npm上已经有这个包了，而且别人写得更完善，所以就不发布了
+### Install
+```bash
+    npm i rollup-plugin-html-template
+```
+
+### Demo
+```js
+    import html from 'rollup-plugin-html-template'
+    export default {
+        input: '',
+        output: {
+            ...
+        },
+        plugin: [
+            html({
+                template: 'index.html' // ignore will generate a default index.html
+            })
+        ]
+    }
+```
