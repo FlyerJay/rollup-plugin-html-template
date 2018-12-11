@@ -7,7 +7,7 @@
 ```js
     import html from 'rollup-plugin-html-template'
     export default {
-        input: '',
+        input: ...,
         output: {
             ...
         },
